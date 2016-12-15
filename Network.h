@@ -7,15 +7,16 @@ class Network
 {
 
 private:
-    static const int INPUT_NODES = 784;
-    static const int HIDDEN_NODES = 200;
-    static const int OUTPUT_NODES = 10;
-    static constexpr double LR_RATE = 0.1;
+    const int INPUT_NODES;
+    const int HIDDEN_NODES;
+    const int OUTPUT_NODES;
+    const double LR_RATE;
 
 public:
-    Network();
-    bool train(std::vector<int> inputs, std::vector<int> targets);
+    Network(int, int, int, double);
+    bool train(std::vector<double> inputs, std::vector<double> targets);
     int query();
+
 };
 
 #endif
