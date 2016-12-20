@@ -3,7 +3,7 @@ A simple threaded neural network with support for several hidden layers.
 
 Tested on the MNIST database with a best result of 97.02 rate.
 
-No modifications on the training data was done (for example rotating every image 10° or -10°).
+No modifications on the training data was done (for example rotating every image 10° and -10°).
 
 The architecture used for the results was 10 epochs, 784 input nodes (obviously), 395 hidden nodes, 10 output nodes and a learning rate of 0.0452.
 
