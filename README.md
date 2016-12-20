@@ -1,2 +1,18 @@
 # NeuralNetwork
-Simple NeuralNetwork
+Simple Threaded NeuralNetwork with support for several hidden layers.
+
+Tested on the MNIST database with a best result of 97.02 rate.
+
+No modifications on the training data was done (for example rotating every image 10° or -10°).
+
+The architecture used for the results was 784 input nodes (obviously), 395 hidden nodes, 10 output nodes and a learning rate of 0.0452.
+
+I got the same result with 2 hidden layers, 395 nodes for the first layer and 125 nodes for the second layer.
+
+
+# Compilation
+Compile with the flag -pthread to enable threading.
+
+Compile with optimization level 3 to reduce the runtime (alot).
+
+```g++ -std=c++11 main.cc Network.cc Node.cc -O3 -pthread```
