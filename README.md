@@ -1,5 +1,5 @@
 # NeuralNetwork
-A simple threaded Neural Network with support for several hidden layers.
+A simple threaded neural network with support for several hidden layers.
 
 Tested on the MNIST database with a best result of 97.02 rate.
 
