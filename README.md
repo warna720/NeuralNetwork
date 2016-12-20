@@ -15,4 +15,30 @@ Compile with the flag -pthread to enable threading.
 
 Compile with optimization level 3 to reduce the runtime (alot).
 
-```g++ -std=c++11 main.cc Network.cc Node.cc -O3 -pthread```
+```
+g++ -std=c++11 main.cc Network.cc Node.cc -O3 -pthread
+```
+
+
+# Example
+```
+g++ -std=c++11 main.cc Network.cc Node.cc -O3 -pthread
+./a.out
+Initiated NL with 784 input nodes, 1 hidden layer(s) [ L1:395 nodes, ], 10 output nodes and a learning rate of 0.0452
+Starting training...
+Epoch 1 of 10
+Epoch 2 of 10
+Epoch 3 of 10
+Epoch 4 of 10
+Epoch 5 of 10
+Epoch 6 of 10
+Epoch 7 of 10
+Epoch 8 of 10
+Epoch 9 of 10
+Epoch 10 of 10
+Training done in 124.624 seconds
+Starting testing...
+Testing done in 4.116 seconds
+Program done in 129.553 seconds
+Result: 9702 of 10000 = 97.02%
+```
