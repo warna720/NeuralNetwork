@@ -9,11 +9,6 @@
 
 #include <chrono>
 
-int calcOutputNodes(int hiddenLayer)
-{
-    std::vector<int> amountOutputs {350, 50};
-    return amountOutputs.at(hiddenLayer);
-}
 
 int main()
 {
